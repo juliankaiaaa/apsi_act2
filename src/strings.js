@@ -9,14 +9,14 @@
 //   capitalize('hello')  ->  'Hello'
 //   capitalize('world')  ->  'World'
 export function capitalize(str) {
-  // TODO
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 // Reverse the ORDER of the words (not the letters within them).
 //   reverseWords('hello world')         ->  'world hello'
 //   reverseWords('the quick brown fox') ->  'fox brown quick the'
 export function reverseWords(str) {
-  // TODO
+  return str.split(' ').reverse().join(' ');
 }
 
 // Count the vowels (a, e, i, o, u) in the string. Case should not matter.
@@ -24,5 +24,13 @@ export function reverseWords(str) {
 //   countVowels('xyz')    ->  0
 //   countVowels('AEIOU')  ->  5
 export function countVowels(str) {
-  // TODO
+  let count = 0;
+
+  for (const ch of str.toLowerCase()) {
+    if ('aeiou'.includes(ch)) {
+      count++;
+    }
+  }
+
+  return count;
 }

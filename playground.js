@@ -13,13 +13,12 @@ import { Rectangle, Square, Counter } from './src/oop.js'
 
 // Example to copy: call it, log it with a label.
 console.log('- basics -')
-console.log('greet:', greet('Juan'))
+console.log('greet:', greet('Amber'))
 console.log('area:', area(3, 4))
 console.log('parityLabel:', parityLabel(7))
 console.log('describeType:', describeType(42))
 
 // YOUR TURN: try the rest (functions, strings, logic, arrays, objects) here.
-
 
 // oop: make an instance with `new`, then call its methods.
 console.log('\n- oop -')
